@@ -1,0 +1,32 @@
+<router-outlet>
+<div class="container">
+  <table class="table">
+  <thead>
+    <tr style="color: black;">
+      <th scope="col">&nbsp;</th>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Detail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Pour tout individu dans individus, on regarde s'il est impaire
+    Si oui, on applique le style arrière plan à gris foncé, sinon à gris clair -->
+    <tr *ngFor = "let individu of individus; let isOdd = odd; let i = index"
+    [ngStyle]="{backgroundColor: isOdd ? 'red' : 'blue'}">
+      <!-- Si l'utilisateur est actif, on affiche une case cochée (code 9745),
+           sinon une case vide (code 9744) -->
+      <td *ngIf="individu.isActive">&#9745;</td>
+      <td *ngIf="! individu.isActive">&#9744;</td>
+      <td>{{individu._id}}</td>
+      <td>{{individu.name}}</td>
+      <td><a href="tel:{{individu.phone}}">{{individu.phone}}</a></td>
+      <td><a href="mailto:{{individu.email}}">{{individu.email}}</a></td>
+      <td><button [routerLink] = "['/detail', i]">Details</button></td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+</router-outlet>

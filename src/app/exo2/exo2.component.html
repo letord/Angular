@@ -1,0 +1,34 @@
+<h3 style="text-align: center;">Exercice 2</h3>
+<div class="card" style="margin-bottom: 40px; background-color: #333; color: white;">
+  <div class="card-body">
+    <p>Créer un tableau Bootstrap statique où le tableau est porté par un composant et chaque ligne par un autre. Les colonnes sont : id, nom, mail.</p>
+  </div>
+</div>
+<div class="container">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Mail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr app-table
+        id="1"
+        nom="Dupont"
+        mail="dupont@gmail.com">
+      </tr>
+      <tr app-table
+        id="2"
+        nom="Truc"
+        mail="truc@gmail.com">
+      </tr>
+      <tr app-table
+        id="3"
+        nom="Machin"
+        mail="machin@gmail.com">
+      </tr>
+    </tbody>
+  </table>
+</div>

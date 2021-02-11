@@ -1,40 +1,12 @@
-<h1>Exercices</h1>
-<h3>Exo1 </h3>
-<app-card [title] = "'Titre'"
-  [subtitle] = "'SousTitre'"
-  [description] = "'description ccc'"
-  [link] = "'lien'" >
-</app-card>
-<h3>Exo2 </h3>
-<table class="table table-dark">
-  <thead>
-    <tr>
-      <th scope="col">Id</th>
-      <th scope="col">Nom</th>
-      <th scope="col">Mail</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr app-table
-      id="1"
-      nom="Dupont"
-      mail="dupont@gmail.com">
-    </tr>
-    <tr>
-      <tr app-table
-      id="2"
-      nom="Truc"
-      mail="truc@gmail.com">
-    </tr>
-    <tr>
-      <tr app-table
-      id="3"
-      nom="Machin"
-      mail="machin@gmail.com">
-    </tr>
-  </tbody>
-</table>
-<h3>Exo3 </h3>
-<app-incrementation></app-incrementation>
-<h3>Exo4</h3>
-<app-animal-card></app-animal-card>
+<div class="scrollmenu">
+  <a routerLink = 'exo1'>Exercice 1</a>
+  <a routerLink = 'exo2'>Exercice 2</a>
+  <a routerLink = 'exo3'>Exercice 3</a>
+  <a routerLink = 'exo4'>Exercice 4</a>
+  <a routerLink = 'exo5'>Exercice 5</a>
+  <a routerLink = 'exo6'>Exercice 6</a>
+  <a routerLink = 'exo7'>Exercice 7</a>
+  <a routerLink = 'exo8'>Exercice 8</a>
+  <a routerLink = 'exo9'>Exercice 9</a>
+</div>
+<router-outlet></router-outlet>
