@@ -19,6 +19,9 @@ import { Exo6Component } from './exo6/exo6.component';
 import { Exo7Component } from './exo7/exo7.component';
 import { Exo8Component } from './exo8/exo8.component';
 import { Exo9Component } from './exo9/exo9.component';
+import { ListNameComponent } from './list-name/list-name.component';
+import { Exo7bisComponent } from './exo7bis/exo7bis.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 
 const mesRoutes:Routes=[
@@ -30,6 +33,7 @@ const mesRoutes:Routes=[
   {path : "exo5", component: Exo5Component},
   {path : "exo6", component: Exo6Component},
   {path : "exo7", component: Exo7Component},
+  {path : "exo7bis", component: Exo7bisComponent},
   {path : "exo8", component: Exo8Component},
   {path : "exo9", component: Exo9Component}
 
@@ -53,7 +57,10 @@ const mesRoutes:Routes=[
     Exo6Component,
     Exo7Component,
     Exo8Component,
-    Exo9Component
+    Exo9Component,
+    ListNameComponent,
+    Exo7bisComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
